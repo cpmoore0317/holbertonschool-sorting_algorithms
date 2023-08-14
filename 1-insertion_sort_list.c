@@ -4,7 +4,7 @@
  * insertion_sort_list - Sorts a doubly linked list of integers
  * using Insertion sort
  * @list: Pointer to a pointer to the beginning of the list
- * 
+ *
  * Return: Void
  */
 
@@ -19,6 +19,7 @@ void insertion_sort_list(listint_t **list)
 	while (current != NULL)
 	{
 		listint_t *temp = current;
+
 		while (temp->prev != NULL && temp->n < temp->prev->n)
 		{
 			if (temp->next != NULL)
